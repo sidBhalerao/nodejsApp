@@ -7,7 +7,7 @@
           {{ title }} <a href="/notes/edit/{{_id}}"><i class="fas fa-edit"></i></a>
         </h5>
         <p class="card-text">{{ description }} </p>
-      </div>
+      </div>  
       <div class="card-footer d-flex justify-content-between align-items-center">{{ date }}
          {{#if status}}
          <button type="submit" class="btn">
@@ -23,11 +23,9 @@
           <input type="hidden" name="_method" value="DELETE">
           <button type="submit" class="btn">
           <i class="fa fa-trash"></i></button>
-        </form>
-       
-        
+        </form>  
       </div>
-    </div>
+    </div>  
   </div>
   {{else}}
   <div class="card mx-auto">

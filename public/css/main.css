@@ -65,4 +65,14 @@ section{
   background-color: #666;
   color: white;
 }
- 
+
+footer{
+  height: 35vh;
+}
+.demoFooter{
+  background-color: #e6ffff;
+}
+.page-footer{
+  margin-left: 200px;
+}
+

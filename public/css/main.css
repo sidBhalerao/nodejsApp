@@ -37,10 +37,10 @@ body {
 }
 
 .signBtn{
-  color: blue;
+  color:whitesmoke;
 }
 .navbar{
-  background-color: #737373;
+  background-color: #003749;
   /*background-color: #bfbfbf;*/
 }
 
@@ -57,16 +57,7 @@ section{
   border: none;
   outline: none;
   padding: 12px 16px;
-  background-color: #f1f1f1;
   cursor: pointer;
-}
-
-.btn:hover {
-  background-color: #ddd;
-}
-.btn.active {
-  background-color: #666;
-  color: white;
 }
 
 footer{

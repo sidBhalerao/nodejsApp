@@ -36,6 +36,9 @@ body {
   display: none;
 }
 
+.signBtn{
+  color: blue;
+}
 .navbar{
   /*background-color: #e6ffe6;*/
   background-color: #e6ffff;

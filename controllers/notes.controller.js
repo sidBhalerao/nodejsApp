@@ -126,7 +126,7 @@ notesCtrl.renderNotesgrids = (req, res) => {
         let obj={}
         var date = moment(item.createdAt, "YYYYMMDD").fromNow();
         item.date = date
-       console.log(" ")
+       
         obj={
           title:item.title,
           description:item.description,

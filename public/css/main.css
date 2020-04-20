@@ -40,8 +40,8 @@ body {
   color: blue;
 }
 .navbar{
-  /*background-color: #e6ffe6;*/
-  background-color: #e6ffff;
+  background-color: #737373;
+  /*background-color: #bfbfbf;*/
 }
 
 section{
@@ -73,7 +73,8 @@ footer{
   height: 35vh;
 }
 .demoFooter{
-  background-color: #e6ffff;
+  background-color: #737373;
+  /*background-color: #bfbfbf;*/
 }
 .page-footer{
   margin-left: 200px;

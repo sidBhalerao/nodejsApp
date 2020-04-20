@@ -68,6 +68,18 @@ section{
   cursor: pointer;
 }
 
+.mainselection {
+   overflow:hidden;
+   width:200px;
+   height: 30px;
+   -moz-border-radius: 9px 9px 9px 9px;
+   -webkit-border-radius: 9px 9px 9px 9px;
+   border-radius: 12px;
+   box-shadow: 1px 1px 5px #330033;
+   background: no-repeat scroll 319px center;
+}
+
+
 footer{
   height: 35vh;
   margin-top: 70px;

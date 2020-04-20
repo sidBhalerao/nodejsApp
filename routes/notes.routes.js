@@ -9,7 +9,8 @@ const {
   renderEditForm,
   updateNote,
   deleteNote,
-  updateStatus
+  updateStatus,
+  renderNotesgrids
 } = require("../controllers/notes.controller");
 
 // Helpers
@@ -34,5 +35,7 @@ router.put("/notes/edit-note/:id", isAuthenticated, updateNote);
 router.delete("/notes/delete/:id", isAuthenticated, deleteNote);
 // update task completed
 router.post("/notes/statusUpdate/:id", isAuthenticated, updateStatus);
+
+router.get("/notesgrid", renderNotesgrids);
 
 module.exports = router;

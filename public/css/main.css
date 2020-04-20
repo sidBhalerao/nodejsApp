@@ -39,6 +39,14 @@ body {
 .signBtn{
   color:whitesmoke;
 }
+.signupFrm{
+  border: 1px solid grey;
+  padding: 10px;
+  border-radius: 25px;
+  /*border-radius: 20px 50px;*/
+  box-shadow: 5px 10px;
+}
+
 .navbar{
   background-color: #003749;
   /*background-color: #bfbfbf;*/

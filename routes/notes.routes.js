@@ -36,6 +36,6 @@ router.delete("/notes/delete/:id", isAuthenticated, deleteNote);
 // update task completed
 router.post("/notes/statusUpdate/:id", isAuthenticated, updateStatus);
 
-router.get("/notesgrid", renderNotesgrids);
+router.get("/notesgrid", isAuthenticated, renderNotesgrids);
 
 module.exports = router;

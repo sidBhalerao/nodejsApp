@@ -32,9 +32,8 @@ notesCtrl.createNewNote = (req, res) => {
   }
 };
 notesCtrl.renderNotes = (req, res) => {
-  Note.find()
+  Note.find({user:req.user.id})
     .then(notes => {
-      console.log("######>>>>>", notes)
       notes.forEach(function (item) {
         var date = moment(item.createdAt, "YYYYMMDD").fromNow();
         item.date = date
@@ -120,7 +119,7 @@ function mySecondFunction(data, callback) {
     });
 }
 notesCtrl.renderNotesgrids = (req, res) => {
-  Note.find()
+  Note.find({user:req.user.id})
     .then(notes => {
       var temp=[]
       notes.forEach(function (item) {

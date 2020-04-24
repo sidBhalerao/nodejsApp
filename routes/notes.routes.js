@@ -41,4 +41,7 @@ router.get("/notesgrid", isAuthenticated, renderNotesgrids);
 router.get("/NotesNetwork", isAuthenticated, renderNotesNetwork);
 
 
+// router.get("/notes/userDetails/:id",isAuthenticated, renderUserDetails);
+
+
 module.exports = router;

@@ -45,6 +45,9 @@ notesCtrl.renderNotes = (req, res) => {
       });
     });
 };
+
+
+
 notesCtrl.renderEditForm = (req, res) => {
   async.waterfall([
     (callback) => { return callback(null, req.params); },

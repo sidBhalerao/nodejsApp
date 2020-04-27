@@ -1,0 +1,64 @@
+
+<div id="myChart" class="chart--container"></div>
+<script>
+  var submitcount='{{{countfilteredsubmit}}}'
+  var count='{{{countfiltered}}}'
+    ZC.LICENSE = ["569d52cefae586f634c54f86dc99e6a9", "b55b025e438fa8a98e32482b5f768ff5"]; // window.onload event for Javascript to run after HTML
+    // because this Javascript is injected into the document head
+    window.addEventListener('load', () => {
+      const myConfig = {
+        type: 'funnel',
+        globals: {
+          fontFamily: 'Georgia'
+        },
+        title: {
+          text: 'A Simple Funnel Chart'
+        },
+        scaleY: {
+          placement: 'opposite',
+          labels: ['Task Created', 'Task Submited'],
+          item: {
+            fontColor: '#999999',
+          }
+        },
+        plot: {
+          valueBox: {
+            text: '%v Total Task',
+            placement: 'left-out', //auto/in, top, bottom, left, right, leftout, or rightout
+            fontColor: 'gray',
+            fontSize: 12,
+            fontWeight: 'normal'
+          },
+         animation: {
+            delay: "2000",
+            effect: "1"
+          }
+        },
+        
+        series: [{
+            values: [count],
+            text: ' Task Created',
+            backgroundColor: '#ff5252'
+          },
+          {
+            values: [submitcount],
+            text: ' Task Submited',
+            backgroundColor: '#ffab40'
+          }
+         
+        ]
+      };
+      zingchart.render({
+        id: 'myChart',
+        data: myConfig,
+        height: '100%',
+        width: '100%'
+      });
+          zingchart.shape_click = function(p) {
+      if (p.shapeid == 'animation') {
+        zingchart.exec('myChart', 'reload');
+      }
+    }
+
+    });
+  </script>

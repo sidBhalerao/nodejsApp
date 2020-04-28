@@ -155,7 +155,6 @@ notesCtrl.renderNotesNetwork = (req, res) => {
         obj = {
           label: item.title,
           id: c,
-          
           arrows: 'to, from'
         }
         temp.push(obj)
@@ -191,4 +190,22 @@ notesCtrl.renderNotesNetwork = (req, res) => {
       });
     });
 }; 
+
+notesCtrl.renderNotesfunnel = (req, res) => {
+  Note.find()
+    .then(notes => {
+      var countfiltered = notes.filter(function (element) {
+        return element.status == false;
+      }).length
+      var countfilteredsubmit = notes.filter(function (element) {
+        return element.status == true;
+      }).length
+    
+      res.render("notes/notesfunnel", { countfilteredsubmit, countfiltered});
+    }).catch(err => {
+      res.status(500).send({
+        message: err.message
+      });
+    });
+};
 module.exports = notesCtrl;

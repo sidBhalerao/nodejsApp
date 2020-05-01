@@ -6,7 +6,6 @@ body {
   background: #1488CC;   /*fallback for old browsers*/ 
   background: -webkit-linear-gradient(to right, #2B32B2, #1488CC);   /*Chrome 10-25, Safari 5.1-6*/ 
   background: linear-gradient(to right, #2B32B2, #1488CC);  /*W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .logo {
@@ -16,6 +15,7 @@ body {
 .zc-body {
   background: #fff;
 }
+
 
 .chart--container {
   height: 100%;
@@ -81,6 +81,32 @@ section{
    border-radius: 12px;
    box-shadow: 1px 1px 5px #330033;
    background: no-repeat scroll 319px center;
+}
+
+/*Side Navigation*/
+.sidenav {
+  height: 40%;
+  width: 140px;
+  position: fixed;
+  z-index: 1;
+  top: 77px;
+  left: 0;
+  background-color: #003749;
+  overflow-x: hidden;
+  padding-top: 8px;
+
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #818181;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
 }
 
 

@@ -6,6 +6,7 @@ const {
   renderNoteForm,
   createNewNote,
   renderNotes,
+  renderUserDetails,
   renderEditForm,
   updateNote,
   deleteNote,
@@ -44,5 +45,6 @@ router.get("/NotesNetwork", isAuthenticated, renderNotesNetwork);
 
 router.get("/NotesFunnel", renderNotesfunnel);
 
+router.get("/userInfo/:id", isAuthenticated, renderUserDetails);
 
 module.exports = router;

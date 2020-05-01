@@ -46,21 +46,7 @@ notesCtrl.renderNotes = (req, res) => {
     });
 };
 
-//User details
 
-notesCtrl.renderUserDetails = (req, res) => {
-  User.findById(req.params.id)
-    .then(note => {
-      if (note.user != req.user.id) {
-        req.flash("error_msg", "Not Authorized");
-        return res.redirect("/notes");
-      }
-      res.render("notes/userInfo", { note });
-    }).catch(err => {
-      req.flash("error_msg", "Not Authorized");
-      return res.redirect("/notes");
-    });
-};
 
 notesCtrl.renderEditForm = (req, res) => {
   async.waterfall([

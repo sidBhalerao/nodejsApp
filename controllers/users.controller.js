@@ -141,4 +141,15 @@ usersCtrl.findAllUser = (req, res) => {
       });
     });
 };
+//User details
+
+usersCtrl.renderUserDetails = (req, res) => {
+  User.findById(req.params.id)
+    .then(note => {
+      res.render("notes/userInfo", { note });
+    }).catch(err => {
+      req.flash("error_msg", "Not Authorized");
+      return res.redirect("/notes");
+    });
+};
 module.exports = usersCtrl;

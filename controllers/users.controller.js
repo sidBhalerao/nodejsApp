@@ -146,7 +146,7 @@ usersCtrl.findAllUser = (req, res) => {
 usersCtrl.renderUserDetails = (req, res) => {
   User.findById(req.params.id)
     .then(note => {
-      res.render("notes/userInfo", { note });
+      res.render("users/userInfo", { note });
     }).catch(err => {
       req.flash("error_msg", "Not Authorized");
       return res.redirect("/notes");

@@ -44,6 +44,5 @@ router.get("/NotesNetwork", isAuthenticated, renderNotesNetwork);
 
 router.get("/NotesFunnel", renderNotesfunnel);
 
-// router.get("/userInfo/:id", isAuthenticated, renderUserDetails);
 
 module.exports = router;

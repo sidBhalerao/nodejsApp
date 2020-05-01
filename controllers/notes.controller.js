@@ -197,6 +197,7 @@ notesCtrl.renderNotesNetwork = (req, res) => {
       temp = JSON.stringify(temp)
       Edge = JSON.stringify(Edge)
 
+
       res.render("notes/notesnetwork", { temp, Edge });
     }).catch(err => {
       res.status(500).send({

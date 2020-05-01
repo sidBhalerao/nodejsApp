@@ -37,6 +37,11 @@ div.vis-network {
   background-color: white;
 }
 
+#ntwrkHeadng{
+  text-align: center;
+  
+}
+
 .zc-ref {
   display: none;
 }

@@ -32,6 +32,11 @@ body {
   min-height: 600px;
 }
 
+/*Note Network */
+div.vis-network {
+  background-color: white;
+}
+
 .zc-ref {
   display: none;
 }
@@ -46,6 +51,7 @@ body {
   /*border-radius: 20px 50px;*/
   box-shadow: 5px 10px;
 }
+
 
 .navbar{
   background-color: #003749;
@@ -83,45 +89,65 @@ section{
    background: no-repeat scroll 319px center;
 }
 
-/*Side Navigation*/
-.sidenav {
-  height: 40%;
-  width: 140px;
+
+
+/* Side Bar */
+#mySidenav a {
   position: fixed;
-  z-index: 1;
-  top: 77px;
-  left: 0;
-  background-color: #003749;
-  overflow-x: hidden;
-  padding-top: 8px;
-
-}
-
-.sidenav a {
-  padding: 6px 8px 6px 16px;
+  left: -80px;
+  margin-top: 75px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 110px;
   text-decoration: none;
   font-size: 17px;
-  color: #818181;
-  display: block;
+  color: white;
+  border-radius: 0 5px 5px 0;
 }
 
-.sidenav a:hover {
-  color: #f1f1f1;
+#mySidenav a:hover {
+  left: 0;
+}
+
+#all {
+  top: 20px;
+  background-color: #4CAF50;
+}
+
+#nwNote {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#list {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#network {
+  top: 200px;
+  background-color: #ffbf00 ;
+}
+
+#fnnlChrt{
+  top:260px;
+  background-color:  #555;
 }
 
 
-footer{
+
+
+/*footer{
   height: 35vh;
   margin-top: 70px;
 }
 .demoFooter{
   background-color: #737373;
-  /*background-color: #bfbfbf;*/
-}
+  *//*background-color: #bfbfbf;*/
+/*}
 .page-footer{
   margin-left: 200px;
 }
+*/
 
-div.vis-network {
-  background-color: white;
-}
+

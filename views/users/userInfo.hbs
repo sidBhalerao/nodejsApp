@@ -1,23 +1,25 @@
 
-
-<div class="col-md-6 mx-auto">
+{{> sidenav }}
+<div class="col-md-4 mx-auto">
   <div class="card edtCrd">
 
     <div class="card-header">
-      <h3>User Details</h3>
+      <h3><strong> Current User </strong></h3>
     </div>
 
     <div class="card-body">
-    
+
         <div class="form-group">
           <b>Name:</b>
-          <input type="text" name="title" class="form-control" value="{{users.note.name}}" />
+          <input type="text" name="title" class="form-control" value="{{ note.name }}" />
         </div>
 
         <div class="form-group">
           <b>Email:</b>
-          <input name="text" class="form-control">{{users.note.email}} />
+          <input name="text" class="form-control" value="{{ note.email }}" />
         </div>
-
+        <div class="form-group">
+          <a href="/notes"><button class="btn btn-success"> Cancel </button></a>
+        </div>
     </div>
 </div>

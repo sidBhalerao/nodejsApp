@@ -24,11 +24,12 @@
         <input type="hidden" name="_method" value="PUT">
         <div class="form-group">
           <b>Title:</b>
-          <input type="text" name="title" class="form-control" value="{{notes.note.title}}" />
+          <input type="text" name="title" class="form-control" value="{{notes.note.title}}"  required/>
         </div>
         <div class="form-group">
           <b>Description:</b>
-          <textarea name="description" class="form-control">{{notes.note.description}}</textarea>
+          <textarea name="description" class="form-control" >{{notes.note.description}}
+          </textarea>
         </div>
 
         
